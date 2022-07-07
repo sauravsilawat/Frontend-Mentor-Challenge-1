@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.attribution {margin-top: 30px; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    width: 500px;
+    margin: 80px auto;
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+}
+
+/*----------------------------- Logo --------------------------*/
+
+.circle--1{
+    margin: 8px;
+    height: 3.2em;
+    width: 3.2em;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.circle--2{
+    margin: 8px;
+    right: -45px;
+    position: relative;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    border: solid white 3px;
+}
+
+.cir--group{
+    display: flex;
+    align-items: center;
+}
+
+/*------------------------- Head Section -------------------------*/
+
+header{
+    margin: 15px auto;
+    background-color: #ec755d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.head--details{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    
+}
+
+.head--details h3{
+    font-size: 30px;
+}
+
+/*------------------------- Main Section -------------------------*/
+
+section{
+    margin: 15px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+section h3{
+    font-size: 30px;
+}
+
+.endText{
+    margin: 20px 0px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.endText--1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.endText--1 h1{
+    font-size: 40px;
+}
+
+.endText--2{
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+}
+
+.endText--2 h5{
+    display: flex;
+    justify-content: end;
+}
+
+.line{
+    border-bottom: solid hsl(27, 66%, 92%) 2px;
+    margin-top: 20px;
+}
+
+.grey{
+    color: grey;
+}
+
+/*----------------------- Bar Graph --------------------------*/
+
+.bar{
+    background-color: #ec755d;
+    border-radius: 4px;
+    width: 48px;
+}
+
+.current-day{
+    background-color: hsl(186, 34%, 60%);
+}
+
+.week{
+    margin: 20px 0 30px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: flex-end;
+}
+
+.days{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.days span{
+    padding: 10px 0;
+}
+
+.info{
+    color: white;
+    margin-bottom: 10px;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.days:hover .info{
+    background-color: hsl(25, 47%, 15%);
+}
+
+.days:hover .bar{
+    background-color: #ec755da2;
+    cursor: pointer;
+}
+
+.days:hover .current-day{
+    background-color: hsla(186, 34%, 60%, 0.625);
+    cursor: pointer;
+}
+
+
+/*-------------------------- For mobile view ----------------------------*/
+
+
+@media only screen and (max-width: 550px) {
+    body{
+        width: 400px;
+        margin: 100px auto;
+    }
+
+    header{
+        margin: 35px auto;
+    }
+
+    section{
+        margin: 15px auto;
+    }
+
+    .bar{
+        width: 38px;
+    }
+
+    .days{
+        width: 45px;
+    }
+
+}
